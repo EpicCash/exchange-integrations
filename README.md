@@ -8,3 +8,6 @@ Deposits and Withdrawals using single wallet
 Binaries run in screen session launched as service
 
 Contributions of API code to process transactions and update user's Account are encouraged and welcome
+
+Documentation here: https://devdocs.epiccash.com/integrations/exchanges/
+
