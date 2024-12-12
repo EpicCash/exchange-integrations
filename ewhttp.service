@@ -1,0 +1,25 @@
+# ewhttp.service
+# To install:
+# sudo cp ewhttp.service /etc/systemd/system/ewhttp.service
+# sudo systemctl daemon-reload
+# sudo systemctl start ewhttp.service
+# sudo systemctl enable ewhttp.service
+#
+[Unit]
+Description=Epic Wallet http listener service 
+After=network.target
+
+[Service]
+ExecStart=/home/epic/runewhttp.sh
+WorkingDirectory=/home/epic
+Restart=always
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=ewhttp
+User=epic
+Group=epic
+Environment=RUST_LOG=info
+
+[Install]
+WantedBy=multi-user.target
+

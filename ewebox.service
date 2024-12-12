@@ -1,0 +1,25 @@
+# ewebox.service
+# To install:
+# sudo cp ewebox.service /etc/systemd/system/ewebox.service
+# sudo systemctl daemon-reload
+# sudo systemctl start ewebox.service
+# sudo systemctl enable ewebox.service
+#
+[Unit]
+Description=Epic Wallet epicbox listener service 
+After=network.target
+
+[Service]
+ExecStart=/home/epic/runewebox.sh
+WorkingDirectory=/home/epic
+Restart=always
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=ewebox
+User=epic
+Group=epic
+Environment=RUST_LOG=info
+
+[Install]
+WantedBy=multi-user.target
+

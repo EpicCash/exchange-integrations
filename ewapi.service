@@ -1,0 +1,25 @@
+# ewapi.service
+# To install:
+# sudo cp ewapi.service /etc/systemd/system/ewapi.service
+# sudo systemctl daemon-reload
+# sudo systemctl start ewapi.service
+# sudo systemctl enable ewapi.service
+#
+[Unit]
+Description=Epic Wallet API service 
+After=network.target
+
+[Service]
+ExecStart=/home/epic/runewapi.sh
+WorkingDirectory=/home/epic
+Restart=always
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=ewapi
+User=epic
+Group=epic
+Environment=RUST_LOG=info
+
+[Install]
+WantedBy=multi-user.target
+
