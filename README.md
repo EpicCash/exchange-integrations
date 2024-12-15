@@ -11,7 +11,9 @@ Download zip - contains all repo files
 
 savetxs.php - example to maintain separate mysql db of txs
 
-deposits.js - example app to process account id from URL and get tx amount from slate then redirect to wallet
+deposits.js - example app to process account id from URL and get tx amount & tx id from slate then redirect to wallet
+
+deposits.php - called from deposits.js to update account balance and add transaction to history
 
 Contributions of API code to process transactions and update user's Account are encouraged and welcome
 
