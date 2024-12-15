@@ -1,10 +1,7 @@
-// redirect http://your.domain/epiccash/* to deposits.js listener with nginx
-
-//nginx:
-//location /epiccash {
+// redirect http://your.domain/epiccash/* to deposits.js listener with nginx:
+// location /epiccash {
 //     proxy_pass http://127.0.0.1:8415
-//}
-//
+// }
 
 const { spawn } = require('child_process');
 const express = require('express');
