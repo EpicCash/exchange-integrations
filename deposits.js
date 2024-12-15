@@ -2,7 +2,7 @@
 
 //nginx:
 //location /epiccash {
-//     return 301 http://localhost:8415
+//     proxy_pass http://127.0.0.1:8415
 //}
 //
 
