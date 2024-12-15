@@ -19,7 +19,7 @@ Contributions of API code to process transactions and update user's Account are 
 
 Documentation here: https://devdocs.epiccash.com/integrations/exchanges/
 ```
-nginx to redirect incoming deposit http to listening javascript app:
+// nginx to redirect incoming deposit http to listening javascript app:
 location /epiccash {
     proxy_pass http://127.0.0.1:8415;
 }
