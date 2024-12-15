@@ -11,6 +11,8 @@ Download zip - contains all repo files
 
 savetxs.php - example to maintain separate mysql db of txs
 
+deposits.js - example app to process account id from URL and get tx amount from slate the redirect to wallet
+
 Contributions of API code to process transactions and update user's Account are encouraged and welcome
 
 Documentation here: https://devdocs.epiccash.com/integrations/exchanges/
