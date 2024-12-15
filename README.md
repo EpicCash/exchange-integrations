@@ -16,9 +16,8 @@ deposits.js - example app to process account id from URL and get tx amount from 
 Contributions of API code to process transactions and update user's Account are encouraged and welcome
 
 Documentation here: https://devdocs.epiccash.com/integrations/exchanges/
-
-nginx to redirect incoming deposit http to listening preprocess javascript app:
 ```
+nginx to redirect incoming deposit http to listening preprocess javascript app:
 location /epiccash {
      return 301 http://localhost:8415
 }
