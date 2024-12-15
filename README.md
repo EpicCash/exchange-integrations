@@ -18,6 +18,9 @@ Contributions of API code to process transactions and update user's Account are 
 Documentation here: https://devdocs.epiccash.com/integrations/exchanges/
 
 nginx to redirect incoming deposit http to listening preprocess javascript app:
+
 location /epiccash {
+
      return 301 http://localhost:8415
+     
 }
