@@ -1,5 +1,5 @@
 # Exchange Integrations
-Epic Cash Integrations For Exchanges
+Epic Cash Integrations For Exchanges - sample non-production example code to get you started.
 
 Integration Guide and support files for integrating Epic Cash into your Exchange
 
